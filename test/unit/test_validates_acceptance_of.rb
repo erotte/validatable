@@ -20,6 +20,12 @@ Expectations do
   end
   
   expect true do
+    validation = Validatable::ValidatesAcceptanceOf.new stub_everything, :acceptance
+    instance = stub(:acceptance=>true)
+    validation.valid?(instance)
+  end
+  
+  expect true do
     validation = Validatable::ValidatesAcceptanceOf.new stub_everything, :acceptance, :allow_nil => true
     instance = stub(:acceptance=>nil)
     validation.valid?(instance)
