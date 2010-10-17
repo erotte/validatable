@@ -6,7 +6,7 @@ Created by Jay Fields, updated by John Nunemaker
 
 == Installation
  
- $ gem install jnunemaker-validatable -s http://gemcutter.org
+ $ gem install erotte-validatable
 
 == License
  	
